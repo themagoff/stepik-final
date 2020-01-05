@@ -8,7 +8,7 @@ class BasketPage(BasePage):
         assert self.is_element_present(*BasketPageLocators.BASKET_ITEMS), "Basket is empty, but shouldn't be"
         
     def should_be_no_items_in_basket(self):
-        assert self.is_not_element_present(*BasketPageLocators.BASKET_ITEMS), "Basket isn't empty, but should be"    
+        assert self.is_not_element_present(*BasketPageLocators.BASKET_ITEMS), "Basket isn't empty, but should be"
         
     def should_be_message_basket_empty(self):
         assert self.is_element_present(*BasketPageLocators.BASKET_EMPTY_MESSAGE), "No message that basket is empty, but should be"
@@ -29,7 +29,3 @@ class BasketPage(BasePage):
         assert self.is_element_present(*ProductPageLocators.ADD_TO_BASKET_INFO_MESSAGE), "Info message is not presented"
         assert self.browser.find_element(*ProductPageLocators.PRODUCT_PRICE).text in self.browser.find_element(*ProductPageLocators.ADD_TO_BASKET_INFO_MESSAGE).text, "Incorrect basket total is in info message"
         
-        
-
-        
-    

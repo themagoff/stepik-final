@@ -8,7 +8,7 @@ class BasePageLocators():
 
 class BasketPageLocators(): 
     BASKET_ITEMS = (By.CSS_SELECTOR, ".basket-items") 
-    BASKET_EMPTY_MESSAGE = (By.CSS_SELECTOR, "#content_inner > p")      
+    BASKET_EMPTY_MESSAGE = (By.CSS_SELECTOR, "#content_inner > p")
     
 class LoginPageLocators():
     LOGIN_FORM = (By.CSS_SELECTOR, "#login_form")

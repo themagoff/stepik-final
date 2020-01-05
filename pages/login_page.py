@@ -21,13 +21,9 @@ class LoginPage(BasePage):
         email_field = self.browser.find_element(*LoginPageLocators.REGISTER_EMAIL)
         pass1_field = self.browser.find_element(*LoginPageLocators.REGISTER_PASSWORD1)
         pass2_field = self.browser.find_element(*LoginPageLocators.REGISTER_PASSWORD2)
-        submit_button = self.browser.find_element(*LoginPageLocators.REGISTER_BUTTON)        
+        submit_button = self.browser.find_element(*LoginPageLocators.REGISTER_BUTTON)
         email_field.send_keys(email)
         pass1_field.send_keys(password)
         pass2_field.send_keys(password)
         submit_button.click()
-        
-    
-    
-
         
